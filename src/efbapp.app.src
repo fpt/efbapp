@@ -1,0 +1,19 @@
+%%-*- mode: erlang -*-
+{application, efbapp,
+ [
+  {description, "efbapp"},
+  {vsn, "1"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  inets,
+                  crypto,
+                  efbsr,
+                  mochiweb,
+                  webmachine
+                 ]},
+  {mod, { efbapp_app, []}},
+  {env, []}
+ ]}.
